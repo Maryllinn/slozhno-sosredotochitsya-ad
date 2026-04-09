@@ -398,7 +398,7 @@
 
   .header__theme-menu {
     justify-self: center;
-    margin-block-start: -108px;
+    /* margin-block-start: -108px; */
     padding-inline-start: 20px;
   }
 
