@@ -1,21 +1,18 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
   --background-image: url("../images/cover-image-light.png");
   --background-color: #fff1f7;
+
   --accent-color: #ff8dcb;
   --title-color: #ffc2e6;
   --title-text-color: #353430;
   --text-color: #353430;
   --section-title-color: #353430;
+
   --button-color: #353430;
   --button-hover-color: rgba(50, 49, 45, 0.4);
   --border-color: #353430;
-  --decor-visibility: hidden;
+
+  --decor-display: none;
   --footer-title-shadow: 2px 2px 0 var(--accent-color);
 }
 
@@ -23,15 +20,18 @@
   :root:not(.theme-dark) {
     --background-image: url("../images/cover-image-light.png");
     --background-color: #fff1f7;
+
     --accent-color: #ff8dcb;
     --title-color: #ffc2e6;
     --title-text-color: #353430;
     --text-color: #353430;
     --section-title-color: #353430;
+
     --button-color: #353430;
     --button-hover-color: rgba(50, 49, 45, 0.4);
     --border-color: #353430;
-    --decor-visibility: hidden;
+
+    --decor-display: none;
     --footer-title-shadow: 2px 2px 0 var(--accent-color);
   }
 }

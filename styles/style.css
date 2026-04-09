@@ -47,21 +47,20 @@
   padding: var(--page-padding);
 }
 
-.header__darkthemed_decoration {
+.header__rec {
   position: absolute;
   inset-inline-end: 19px;
   inset-block-start: 10px;
-  display: flex;
+  display: var(--decor-display);
   align-items: center;
   gap: 10px;
-  visibility: var(--decor-visibility);
   color: var(--accent-color);
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
 }
 
-.header__darkthemed_decoration::after {
+.header__rec::after {
   content: "";
   inline-size: 9px;
   block-size: 9px;
@@ -116,7 +115,6 @@
   line-height: 82.5%;
   text-shadow: 4px 4px 0 var(--accent-color);
   text-transform: lowercase;
-  margin-inline-start: 0;
 }
 
 .header__text {
@@ -164,6 +162,12 @@
   font-weight: 700;
 }
 
+.card__text {
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
 .tips {
   display: grid;
   gap: 20px;
@@ -176,12 +180,6 @@
 
 .tips__title {
   font-weight: 400;
-}
-
-.card__text {
-  color: var(--text-color);
-  font-size: 18px;
-  line-height: 23.4px;
 }
 
 .card__link {
@@ -253,17 +251,13 @@
     padding-inline-start: 0;
   }
 
-  .header__darkthemed_decoration {
+  .header__rec {
     inset-inline-end: 29px;
     inset-block-start: 20px;
   }
 
   .header__theme-menu {
     margin-block-start: 172px;
-  }
-
-  .header__title {
-    margin-inline-start: 0;
   }
 
   .header__text {
@@ -280,21 +274,21 @@
     column-gap: 20px;
   }
 
-  .content-section_type_wide {
-    grid-template-columns: 1fr;
-  }
-
-  .content-section_type_wide .content-section__articles_three-columns {
-    grid-template-columns: 1fr;
-  }
-
   .content-section__articles {
     grid-column: 2 / 3;
   }
 
-  .content-section_type_wide .content-section__title,
-  .content-section_type_wide .content-section__articles {
+  .content-section_type_causes {
+    grid-template-columns: 1fr;
+  }
+
+  .content-section_type_causes .content-section__title,
+  .content-section_type_causes .content-section__articles {
     grid-column: auto;
+  }
+
+  .content-section_type_causes .content-section__articles_three-columns {
+    grid-template-columns: 1fr;
   }
 
   .gallery {
@@ -359,7 +353,7 @@
     grid-template-columns: 315px 1fr;
   }
 
-  .content-section_type_wide .content-section__articles_three-columns {
+  .content-section_type_causes .content-section__articles_three-columns {
     grid-template-columns: repeat(3, 1fr);
   }
 
