@@ -1,37 +1,31 @@
 :root.theme-light {
   --background-image: url("../images/cover-image-light.png");
-  --background-color: #fff1f7;
-
+  --active-button-color: rgba(50, 49, 45, 0.4);
+  --button-color: #353430;
   --accent-color: #ff8dcb;
+  --background-color: #fff1f7;
   --title-color: #ffc2e6;
   --title-text-color: #353430;
   --text-color: #353430;
-  --section-title-color: #353430;
-
-  --button-color: #353430;
-  --button-hover-color: rgba(50, 49, 45, 0.4);
+  --posttitle-text-color: #353430;
+  --topic-title: #353430;
   --border-color: #353430;
-
-  --decor-display: none;
-  --footer-title-shadow: 2px 2px 0 var(--accent-color);
+  --is-light: hidden;
 }
 
 @media (prefers-color-scheme: light) {
-  :root:not(.theme-dark) {
+  :root {
     --background-image: url("../images/cover-image-light.png");
-    --background-color: #fff1f7;
-
+    --active-button-color: rgba(50, 49, 45, 0.4);
+    --button-color: #353430;
     --accent-color: #ff8dcb;
+    --background-color: #fff1f7;
     --title-color: #ffc2e6;
     --title-text-color: #353430;
     --text-color: #353430;
-    --section-title-color: #353430;
-
-    --button-color: #353430;
-    --button-hover-color: rgba(50, 49, 45, 0.4);
+    --posttitle-text-color: #353430;
+    --topic-title: #353430;
     --border-color: #353430;
-
-    --decor-display: none;
-    --footer-title-shadow: 2px 2px 0 var(--accent-color);
+    --is-light: hidden;
   }
 }

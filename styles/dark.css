@@ -1,17 +1,14 @@
 :root.theme-dark {
   --background-image: url("../images/cover-image-dark.png");
-  --background-color: #000028;
-
+  --active-button-color: rgba(255, 0, 112, 0.4);
+  --button-color: #ff0070;
   --accent-color: #ff0070;
+  --background-color: #000028;
   --title-color: #db00ff;
   --title-text-color: #000028;
   --text-color: #f1b2ce;
-  --section-title-color: #ff0070;
-
-  --button-color: #ff0070;
-  --button-hover-color: rgba(255, 0, 112, 0.4);
-  --border-color: #ff0070;
-
-  --decor-display: flex;
-  --footer-title-shadow: 2px 2px 0 var(--accent-color);
+  --posttitle-text-color: var(--title-text-color);
+  --topic-title: var(--accent-color);
+  --border-color: var(--accent-color);
+  --is-light: visible;
 }
